@@ -33,7 +33,7 @@ class TrainingLogger:
             logging.info("   Validation improved - Model saved!")
 
     @staticmethod
-    def log_training_start(run_name, train_samples, val_samples, num_epochs, use_mlflow=False):
+    def log_training_start(run_name, train_samples, val_samples, num_epochs, use_mlflow=True):
         """Log training start information"""
         logging.info("=" * 60)
         logging.info(f"STARTING TRAINING: {run_name}")
